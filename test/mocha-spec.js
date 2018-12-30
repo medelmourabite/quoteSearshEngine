@@ -11,7 +11,7 @@ describe("Mon test unitaire", function() {
 
   });
   it("Un test qui passe toujours", function(done) {
-    expect(true).to.be.equal(true);
+    expect(true).to.be.equal(false);
     done();
   });
 });
