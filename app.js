@@ -4,6 +4,9 @@ var request = require("request");
 var bodyParser = require("body-parser");
 var cheerio = require("cheerio");
 var app = express();
+var cfenv = require("cfenv")
+
+var appEnv = cfenv.getAppEnv();
 
 var port = Number(process.env.PORT || 3000);
 
@@ -126,6 +129,6 @@ function getQuotes(url, cb) {
   });
 }
 
-app.listen(port, function() {
-  console.log("Running on " + port);
+app.listen(appEnv.port, function() {
+  console.log("Running on " + appEnv.url);
 });

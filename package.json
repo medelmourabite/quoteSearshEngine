@@ -1,20 +1,29 @@
 {
-  "name": "qse",
+  "name": "QuoteSearchEngine",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-	"start": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "EL Mourabite Mohamed",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cfenv": "^1.1.0",
     "cheerio": "^1.0.0-rc.2",
     "consolidate": "^0.15.1",
     "express": "^4.16.3",
     "request": "^2.88.0",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^5.2.0",
+    "mocha-jenkins-reporter": "^0.4.1",
+    "rewire": "^4.0.1"
   }
 }
